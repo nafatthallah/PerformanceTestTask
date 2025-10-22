@@ -42,7 +42,7 @@ services:
 execution:
   - executor: jmeter
     scenario:
-      script: "D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/PerformanceTask/StressTest/Stress Testing on Dummy Json APIs Test Plan.jmx"
+      script: "D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/PerformanceTask/StressTest/Stress Test Plan.jmx"
 
 reporting:
   - module: final-stats
@@ -53,3 +53,4 @@ reporting:
       - failures > 2% for 60s, stop as failed, label="error rate"
       - hits < 20/s for 60s, stop as failed, label="rps"
       - success-rate < 98% for 60s, stop as failed, label="pass rate"
+
