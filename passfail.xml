@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-97680562699" name="Add To Cart">
+      <error message="Number of samples in transaction : 1, number of failing samples : 1" type="Error">Number of samples in transaction : 1, number of failing samples : 1
+(status code is 400)
+(total errors of this type: 104)</error>
+      <failure message="The operation lasted too long" type="Assertion Failure">The operation lasted too long
+(status code is 201)
+(total errors of this type: 41)</failure>
+      <error message="" type="Error">
+(status code is 429)
+(total errors of this type: 15)</error>
+    </testcase>
+    <testcase classname="bzt-97680562699" name="Fetch Products List">
+      <failure message="The operation lasted too long" type="Assertion Failure">The operation lasted too long
+(status code is 200)
+(total errors of this type: 163)</failure>
+      <error message="Number of samples in transaction : 2, number of failing samples : 1" type="Error">Number of samples in transaction : 2, number of failing samples : 1
+(status code is 429)
+(total errors of this type: 58)</error>
+      <error message="" type="Error">
+(status code is 429)
+(total errors of this type: 6)</error>
+    </testcase>
+    <testcase classname="bzt-97680562699" name="Login">
+      <error message="Number of samples in transaction : 1, number of failing samples : 1" type="Error">Number of samples in transaction : 1, number of failing samples : 1
+(status code is 400)
+(total errors of this type: 108)</error>
+      <failure message="The operation lasted too long" type="Assertion Failure">The operation lasted too long
+(status code is 200)
+(total errors of this type: 230)</failure>
+      <error message="" type="Error">
+(status code is Non HTTP response code: java.net.SocketException)
+(total errors of this type: 8)</error>
+    </testcase>
+    <testcase classname="bzt-97680562699" name="Users"/>
+  </testsuite>
+</testsuites>

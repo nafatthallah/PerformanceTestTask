@@ -1,0 +1,55 @@
+settings:
+  artifacts-dir: "D:/perf/artifacts/%Y-%m-%d_%H-%M-%S"
+
+modules:
+  jmeter:
+    path: "D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/jmeter.bat"
+    properties:
+      jmeter.reportgenerator.apdex_satisfied_threshold: 1000
+      jmeter.reportgenerator.report_title: JMeter Taurus Demo
+      jmeter.reportgenerator.overall_granularity: 1000
+      jmeter.reportgenerator.exporter.html.series_filter: ^(ClickNext|HP|scenario)(-success|-failure)?$
+      output: ${TAURUS_ARTIFACTS_DIR}/output/
+      jmeter.save.saveservice.output_format: csv
+      jmeter.save.saveservice.print_field_names: true
+      jmeter.save.saveservice.timestamp_format: ms
+      jmeter.save.saveservice.time: true
+      jmeter.save.saveservice.elapsed: true
+      jmeter.save.saveservice.label: true
+      jmeter.save.saveservice.response_code: true
+      jmeter.save.saveservice.response_message: true
+      jmeter.save.saveservice.thread_name: true
+      jmeter.save.saveservice.data_type: true
+      jmeter.save.saveservice.successful: true
+      jmeter.save.saveservice.bytes: true
+      jmeter.save.saveservice.sent_bytes: true
+      jmeter.save.saveservice.grp_threads: true
+      jmeter.save.saveservice.all_threads: true
+      jmeter.save.saveservice.latency: true
+      jmeter.save.saveservice.idle_time: true
+      jmeter.save.saveservice.connect_time: true
+      jmeter.save.saveservice.hostname: true
+      jmeter.save.saveservice.assertion_results: all
+      jmeter.save.saveservice.assertion_results_failure_message: true
+      jmeter.save.saveservice.requestHeaders: true
+      jmeter.save.saveservice.responseHeaders: true
+
+services:
+  # Generate JMeter HTML Dashboard from Taurus' kpi.jtl
+- module: shellexec
+  post-process:
+  - D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/jmeter -p D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/jmeter.properties -q ${TAURUS_ARTIFACTS_DIR}/jmeter-bzt.properties -g ${TAURUS_ARTIFACTS_DIR}/output/output.csv -o ${TAURUS_ARTIFACTS_DIR}/folder
+execution:
+  - executor: jmeter
+    scenario:
+      script: "D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/PerformanceTask/StressTest/Stress Testing on Dummy Json APIs Test Plan.jmx"
+
+reporting:
+  - module: final-stats
+    filename: "final-stats.txt"
+  - module: passfail
+    criteria:
+      - p95 > 1200ms for 30s, stop as failed, label="p95 latency"
+      - failures > 2% for 60s, stop as failed, label="error rate"
+      - hits < 20/s for 60s, stop as failed, label="rps"
+      - success-rate < 98% for 60s, stop as failed, label="pass rate"

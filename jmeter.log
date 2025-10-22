@@ -1,0 +1,33 @@
+2025-10-22 19:52:36,906 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-10-22 19:52:36,930 INFO o.a.j.JMeter: Loading user properties from: D:\nadaf\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2025-10-22 19:52:36,930 INFO o.a.j.JMeter: Loading system properties from: D:\nadaf\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2025-10-22 19:52:36,930 INFO o.a.j.JMeter: Loading additional properties from: D:\perf\artifacts\2025-10-22_19-50-29/jmeter-bzt.properties
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: Version 5.6.3
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: java.version=18
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: os.name=Windows 11
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: os.arch=amd64
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: os.version=10.0
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: java.awt.headless=true
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-10-22 19:52:36,946 INFO o.a.j.JMeter: Available Processors =12
+2025-10-22 19:52:36,956 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-10-22 19:52:36,956 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-10-22 19:52:36,956 INFO o.a.j.JMeter: JMeterHome=D:\nadaf\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2025-10-22 19:52:36,956 INFO o.a.j.JMeter: user.dir  =D:\nadaf\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\PerformanceTask\StressTest
+2025-10-22 19:52:36,956 INFO o.a.j.JMeter: PWD       =D:\nadaf\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\PerformanceTask\StressTest
+2025-10-22 19:52:41,911 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: LAPTOP-I64F104J FullName: LAPTOP-I64F104J
+2025-10-22 19:52:41,911 INFO o.a.j.JMeter: user.classpath=D:/perf/artifacts/2025-10-22_19-50-29;D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/PerformanceTask/StressTest
+2025-10-22 19:52:41,911 INFO o.a.j.JMeter: Adding to classpath and loader: D:/perf/artifacts/2025-10-22_19-50-29
+2025-10-22 19:52:41,911 INFO o.a.j.JMeter: Adding to classpath and loader: D:/nadaf/Downloads/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/PerformanceTask/StressTest
+2025-10-22 19:52:41,952 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'D:\perf\artifacts\2025-10-22_19-50-29\folder'
+2025-10-22 19:52:41,958 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-10-22 19:52:41,958 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Cannot read test results file : D:\perf\artifacts\2025-10-22_19-50-29\output\output.csv
+	at org.apache.jmeter.report.dashboard.ReportGenerator.<init>(ReportGenerator.java:134) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:484) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
