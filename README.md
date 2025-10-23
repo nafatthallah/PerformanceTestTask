@@ -63,8 +63,8 @@ Each test plan ensures that the API endpoints respond correctly, within acceptab
    Depending on the testing phase, open one of the following:
 
    ```
-   Smoke Testing on Dummy Json APIs Test Plan.jmx
-   Load Testing on Dummy Json APIs Test Plan.jmx
+   Smoke Test Plan.jmx
+   Load Test Plan.jmx
    Workload Test Plan.jmx
    Stress Test Plan.jmx
    ```
@@ -138,14 +138,16 @@ Each test validates:
 
 | File                                             | Description                            |
 | ------------------------------------------------ | -------------------------------------  |
-| `Smoke Testing on Dummy Json APIs Test Plan.jmx` | API Smoke Test plan                    |
-| `Load Testing on Dummy Json APIs Test Plan.jmx`  | API Load Test plan                     |
+| `Smoke Test Plan.jmx` | API Smoke Test plan                    |
+| `Load Test Plan.jmx`  | API Load Test plan                     |
 | `Workload Test Plan.jmx`                         | Workload simulation                    |
 | `Stress Test Plan.jmx`                           | Stress and break-point testing         |
 | `API_Smoke_Test_Report.pdf`                      | Smoke test report and results          |
 | `Workload_Test_Report.docx`                      | Workload test results and SLA analysis |
 | `Load_Test_Report.docx`                          | Load test results and SLA analysis     |
 | `Stress_Test_Report.docx`                        | Stress test results and SLA analysis   |
+| `Summary_Load_Test_Report.docx`                  | Executive Summary Load test  Report    |
+| `Summary_Stress_Test_Report.docx`                | Executive Summary Stress test  Report  |
 | `README.md`                                      | Setup and documentation file           |
 
 ---
